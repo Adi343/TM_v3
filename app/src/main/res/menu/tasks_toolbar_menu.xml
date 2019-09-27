@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sortByDate"
+        android:icon="@drawable/ic_date_24dp"
+        android:title="sortByDate"
+        app:showAsAction="ifRoom"
+        >
+    </item>
+
+    <item
+        android:id="@+id/sortByPriority"
+        android:icon="@drawable/ic_challenge"
+        android:title="sortByPriority"
+        app:showAsAction="ifRoom"
+        >
+    </item>
+
+</menu>

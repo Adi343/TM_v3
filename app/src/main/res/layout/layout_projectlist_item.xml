@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_margin="15dp"
+    android:translationZ="5sp"
+    app:cardCornerRadius="10dp"
+    android:background="#000000"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="true"
+
+    >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#000000"
+        >
+
+
+
+            <TextView
+                android:id="@+id/tvBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Project Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="40sp"
+                android:textColor="#FFC30B"
+                android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/total_number_of_tasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="sans-serif-light"
+            android:text="* tasks remaining."
+            android:textSize="25sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFC30B"/>
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

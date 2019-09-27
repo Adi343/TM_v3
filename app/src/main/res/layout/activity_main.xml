@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Use DrawerLayout as root container for activity -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/coordinatorLayout"
+    android:background="#FFC30B"
+    >
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.appbar.AppBarLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:minHeight="?attr/actionBarSize"
+                android:visibility="visible"
+                android:background="#000000"
+                app:titleTextColor="#FFC30B"
+                >
+                <!--
+                android:background="@color/colorPrimary"
+
+                app:titleTextColor="#ffffff"
+
+                -->
+
+
+
+
+                <!--
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TaskM"
+                    android:textStyle="normal"
+                    android:textSize="28sp"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-regular"
+                    android:layout_gravity="center"
+                    />
+
+
+                <ImageButton
+                    android:id="@+id/extra_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_more_vert_black_24dp"
+                    android:layout_marginLeft="120dp"
+                    />
+
+
+                </LinearLayout>
+
+                -->
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ListView
+            android:id="@+id/list_of_projects"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="10dp"
+            android:divider="#FFC30B"
+            android:dividerHeight="15sp"
+            android:background="#FFC30B"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/emptyView"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            >
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_habits"
+                android:layout_gravity="center"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Press '+' to add new Projects!"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:background="@color/yellow"/>
+
+        </LinearLayout>
+            <!--
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp"
+            -->
+
+        <!--
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emptyView"
+        android:text="Let's get started!"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:visibility="gone"
+            android:textColor="#000000"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/emptyView2"
+            android:background="@drawable/pic_3"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            />
+
+            -->
+
+
+        <!--
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@android:drawable/ic_input_add"
+            android:backgroundTint="#ff69b4"
+            android:tint="#000000"
+            android:layout_margin="16dp"
+            />
+
+        -->
+
+
+        <Button
+            android:id="@+id/fab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/rounded_button"
+            android:elevation="75dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Add new Project"
+            android:textColor="#FFC30B"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+         />
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+
+        app:headerLayout="@layout/nav_header"
+
+        app:menu="@menu/items_menu"
+        app:itemIconTint="#454545"
+        app:itemBackground="@color/yellow"/>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:textSize="25sp"
+        android:text="234234"
+        android:textColor="@color/yellow"
+        />
+
+    <TextView
+        android:id="@+id/DAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvBody"
+        android:layout_gravity="right"
+
+        android:layout_marginLeft="200dp"
+        android:maxLines="1"
+        android:text="DAT"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:checked="false"
+        android:focusableInTouchMode="false"
+        android:buttonTint="@color/colorPrimary"
+        android:backgroundTint="@color/yellow"
+        />
+
+</RelativeLayout>

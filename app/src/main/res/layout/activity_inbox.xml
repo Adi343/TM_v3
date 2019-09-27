@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskViewActivity"
+    android:id="@+id/coordinatorLayout"
+    android:background="@color/black">
+
+    <com.google.android.material.appbar.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:minHeight="?attr/actionBarSize"
+            android:paddingRight="10dp"
+            android:visibility="visible"
+            app:titleMarginStart="20dp"
+            android:background="@color/black"
+            app:titleTextColor="@color/yellow">
+
+            <!--
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Task Machine"
+                            android:textStyle="bold"
+                            android:textSize="28sp"
+                            android:textColor="#000000"
+                            android:fontFamily="monospace"
+                            android:layout_marginLeft="60dp"/>
+
+                            -->
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        app:cardBackgroundColor="@color/yellow"
+        android:elevation="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/black">
+
+            <!--
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:id="@+id/projectName"
+                android:textSize="40sp"
+                android:layout_margin="10dp"
+                android:text="Inbox"
+                android:background="@color/black"/>
+
+                -->
+
+            <ListView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/list_of_tasks"
+                android:clickable="true"
+                android:background="@color/black"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/emptyView1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                >
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_inbox_yellow"
+                    android:layout_gravity="center"
+
+                    />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Press '+' to add new Tasks!"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:textColor="@color/yellow"
+                android:background="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@android:drawable/ic_input_add"
+        android:backgroundTint="@color/yellow"
+        android:tint="@color/black"
+        android:layout_margin="10dp"
+
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
